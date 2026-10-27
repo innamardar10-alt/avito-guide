@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Гид по Авито — Инна Мардарь</title>
+<meta name="description" content="Гид по Авито: соберите объявление за один вечер. Четыре шага: первое фото, слова поиска, заголовок, текст.">
+<meta property="og:title" content="Гид по Авито: соберите объявление за один вечер">
+<meta property="og:description" content="Четыре шага. В каждом: что сделать, пример, проверка. Бесплатно.">
+<meta property="og:image" content="https://innamardar10-alt.github.io/avito-guide/gid/inna.jpg">
+<style>
+@font-face{font-family:Unb;font-weight:800;font-display:swap;src:url(fonts/unbounded-cyrillic-800-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Unb;font-weight:800;font-display:swap;src:url(fonts/unbounded-latin-800-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+@font-face{font-family:Int;font-weight:700;font-display:swap;src:url(fonts/inter-cyrillic-700-normal.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:Int;font-weight:700;font-display:swap;src:url(fonts/inter-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215}
+:root{--ch:#8B2D3A;--dark:#4A1422;--cream:#FFE1D2;--hot:#E8334A}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{margin:0;font:700 19px/1.5 Int,system-ui,sans-serif;color:var(--dark);background:linear-gradient(160deg,#FFC4BB 0%,#E8808A 55%,#B8404F 100%) fixed;background-color:#E8808A;padding-bottom:calc(96px + env(safe-area-inset-bottom))}
+main{max-width:520px;margin:0 auto;padding:28px 18px 0}
+h1,h2,.tag,.btn,.num{font-family:Unb,Int,sans-serif;font-weight:800}
+h1{font-size:clamp(42px,13vw,64px);line-height:1.05;margin:8px 0 18px;color:var(--dark)}
+h1 span{color:var(--ch)}
+h2{font-size:clamp(28px,8vw,36px);line-height:1.15;margin:0 0 16px;color:var(--dark)}
+.sub{background:var(--hot);color:#fff;border-radius:22px;padding:16px 20px;font:800 clamp(20px,5.6vw,26px)/1.25 Unb,Int,sans-serif;margin:0 0 20px;box-shadow:0 10px 24px rgba(74,20,34,.28)}
+.who{display:flex;align-items:center;gap:14px;margin:0 0 26px}
+.who img{width:92px;height:92px;border-radius:50%;border:5px solid var(--cream);object-fit:cover;flex:none;box-shadow:0 8px 20px rgba(74,20,34,.3)}
+.card{background:var(--cream);border-radius:26px;padding:22px 20px;margin:0 0 18px;box-shadow:0 10px 24px rgba(74,20,34,.25)}
+.card p{margin:0 0 14px}
+.card p:last-child,.card ol:last-child{margin-bottom:0}
+.tag{display:inline-block;background:var(--ch);color:var(--cream);border-radius:14px;padding:6px 14px;font-size:16px;margin:4px 0 10px}
+.tag.hot{background:var(--hot);color:#fff}
+ol{margin:0 0 14px;padding-left:1.3em}
+li{margin:0 0 10px}
+.steps a{display:flex;align-items:center;gap:14px;text-decoration:none;background:var(--cream);color:var(--ch);border-radius:22px;padding:16px 18px;margin:0 0 12px;font:800 clamp(20px,5.8vw,24px)/1.2 Unb,Int,sans-serif;box-shadow:0 8px 20px rgba(74,20,34,.22)}
+.steps a:nth-child(even){background:var(--ch);color:var(--cream)}
+.steps a:active{transform:scale(.98)}
+.num{background:var(--hot);color:#fff;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;font-size:20px;flex:none}
+section{scroll-margin-top:16px;margin:34px 0 0}
+.check{display:flex;gap:14px;align-items:flex-start;background:var(--cream);border-radius:22px;padding:16px 18px;margin:0 0 12px;cursor:pointer;box-shadow:0 8px 20px rgba(74,20,34,.22)}
+.check input{appearance:none;-webkit-appearance:none;flex:none;width:34px;height:34px;border-radius:10px;border:3px solid var(--ch);background:#fff;margin:2px 0 0;display:grid;place-items:center}
+.check input:checked{background:var(--hot);border-color:var(--hot)}
+.check input:checked::after{content:"";width:9px;height:17px;border:solid #fff;border-width:0 4px 4px 0;transform:rotate(45deg) translate(-1px,-2px)}
+.check span{flex:1}
+.btn{display:block;text-align:center;text-decoration:none;border-radius:22px;padding:18px 16px;font-size:clamp(20px,5.8vw,24px);margin:0 0 14px;box-shadow:0 10px 24px rgba(74,20,34,.3)}
+.btn.max{background:var(--hot);color:#fff}
+.btn.tg{background:var(--ch);color:var(--cream)}
+.btn:active{transform:scale(.98)}
+.up{position:fixed;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(0deg,rgba(184,64,79,.97),rgba(184,64,79,.85));display:flex;gap:10px;max-width:520px;margin:0 auto}
+.up a{flex:1;text-align:center;text-decoration:none;border-radius:16px;padding:14px 8px;font:800 17px/1.1 Unb,Int,sans-serif}
+.up .a1{background:var(--cream);color:var(--ch)}
+.up .a2{background:var(--hot);color:#fff}
+.lnk{color:var(--hot);text-decoration:underline;text-underline-offset:3px}
+.btn.more{background:var(--cream);color:var(--ch)}
+.note{font-size:15px;opacity:.85;text-align:center;margin:26px 0 0}
+</style>
+</head>
+<body>
+<main>
+
+<h1>гид по <span>авито</span></h1>
+<p class="sub">Соберите объявление за один вечер</p>
+<div class="who"><img src="inna.jpg" alt="Инна Мардарь" width="92" height="92"><div>Инна Мардарь,<br>авитолог</div></div>
+
+<div class="card"><p>Это короткий ознакомительный гид. Внутри ссылка на более подробный: <a class="lnk" href="https://innamardar10-alt.github.io/avito-guide/" target="_blank" rel="noopener">подробный гид по Авито</a>.</p></div>
+
+<nav class="steps" aria-label="4 шага по порядку">
+  <h2>4 шага по порядку</h2>
+  <a href="#foto"><span class="num">1</span>Первое фото</a>
+  <a href="#poisk"><span class="num">2</span>Слова поиска</a>
+  <a href="#zagolovok"><span class="num">3</span>Заголовок</a>
+  <a href="#tekst"><span class="num">4</span>Текст</a>
+</nav>
+<p class="sub" style="background:var(--ch);color:var(--cream);margin-top:6px">В каждом шаге: что сделать, пример, проверка</p>
+
+<section id="foto">
+  <h2>шаг 1<br>первое фото</h2>
+  <div class="card">
+    <p>Покупатель видит фото раньше заголовка и решает за секунду: нажать или пролистнуть.</p>
+    <span class="tag">Что сделать</span>
+    <ol>
+      <li>Снимайте сами: живое, светлое, чёткое фото. Не берите фото из интернета.</li>
+      <li>Первое фото: товар крупно и короткая надпись о главном. Без цветной рамки и плашки.</li>
+      <li>Проверьте, как объявление выглядит на телефоне и на компьютере.</li>
+    </ol>
+    <span class="tag">Пример</span>
+    <p>Было: вязаные носки лежат на столе среди ниток. Стало: одна пара крупно на светлом фоне, надпись «Шерсть, не колется», на втором фото — доставка и срок, на третьем — рука для масштаба.</p>
+    <span class="tag hot">Проверка</span>
+    <p>Откройте своё объявление в ленте на телефоне. За секунду понятно, что это и зачем? Надпись видна целиком?</p>
+  </div>
+</section>
+
+<section id="poisk">
+  <h2>шаг 2<br>слова поиска</h2>
+  <div class="card">
+    <p>Покупатель находит вас по своим словам. Нужно узнать, какие это слова, и поставить их в заголовок и текст.</p>
+    <span class="tag">Что сделать</span>
+    <ol>
+      <li>Запишите 5 слов, которыми вы сами искали бы свой товар. Добавьте синонимы.</li>
+      <li>Введите слово в поиске Авито и посмотрите подсказки. Так люди вводят на Авито.</li>
+      <li>Выберите 1–3 главные фразы для заголовка. Остальные впишите в текст.</li>
+    </ol>
+    <span class="tag">Пример</span>
+    <p>Для вязаных носков возможные фразы: «вязаные носки», «шерстяные носки ручной работы», «носки в подарок». Это гипотезы, их частотность не проверена. Заголовок: «Вязаные носки из шерсти, в подарок».</p>
+    <span class="tag hot">Проверка</span>
+    <p>Есть список подходящих фраз с пометкой, какие ещё надо проверить, и заготовка заголовка до 50 знаков.</p>
+  </div>
+</section>
+
+<section id="zagolovok">
+  <h2>шаг 3<br>заголовок</h2>
+  <div class="card">
+    <p>Заголовок читают в ленте за секунду. По нему человек решает, открывать ли объявление.</p>
+    <span class="tag">Что сделать</span>
+    <ol>
+      <li>Начните с названия: что это. Так, как человек напишет в поиске, без сложных слов и сокращений.</li>
+      <li>Добавьте одно отличие: материал, размер, доставка, срок или опыт. Только то, что правда.</li>
+      <li>Уложитесь в 50 знаков, чтобы последнее слово не оборвалось.</li>
+    </ol>
+    <span class="tag">Пример</span>
+    <p>Было: «Красивая сумка». Стало: «Сумка из льна ручной работы, на плечо» — если материал и изготовление подтверждены.</p>
+    <span class="tag hot">Проверка</span>
+    <p>Заголовок до 50 знаков, без запрещённых слов. Без фото понятно, что вы предлагаете.</p>
+  </div>
+</section>
+
+<section id="tekst">
+  <h2>шаг 4<br>текст</h2>
+  <div class="card">
+    <p>Текст должен быстро ответить: что это, кому подходит и что делать дальше.</p>
+    <span class="tag">Что сделать</span>
+    <ol>
+      <li>Главное преимущество поставьте в первую строку.</li>
+      <li>Пишите словами покупателя. Слова для поиска впишите в обычные фразы, не списком.</li>
+      <li>Уберите лишнее. Проверьте на телефоне, что текст читается легко.</li>
+    </ol>
+    <span class="tag">Пример</span>
+    <p>«Вязаные носки на заказ. Подарок к празднику: успеем к дате. Напишите, подберу размер и цвет». Дальше: материал, размеры, срок, доставка, подарочная упаковка и призыв в конце. Это учебный пример.</p>
+    <span class="tag hot">Проверка</span>
+    <p>Главное видно в первой строке. Нет списка слов через запятую. Текст легко читается на телефоне.</p>
+  </div>
+</section>
+
+<section id="proverka">
+  <h2>проверьте<br>своё объявление</h2>
+  <label class="check"><input type="checkbox"><span>Откройте своё объявление в ленте на телефоне. За секунду понятно, что это и зачем? Надпись видна целиком?</span></label>
+  <label class="check"><input type="checkbox"><span>Есть список подходящих фраз с пометкой, какие ещё надо проверить, и заготовка заголовка до 50 знаков.</span></label>
+  <label class="check"><input type="checkbox"><span>Заголовок до 50 знаков, без запрещённых слов. Без фото понятно, что вы предлагаете.</span></label>
+  <label class="check"><input type="checkbox"><span>Главное видно в первой строке. Нет списка слов через запятую. Текст легко читается на телефоне.</span></label>
+</section>
+
+<section id="dalshe">
+  <h2>что дальше</h2>
+  <p class="sub" style="background:var(--ch);color:var(--cream)">Сделали сами — отлично</p>
+  <div class="card"><p>Хотите, чтобы я посмотрела ваше объявление или собрала его за вас: консультация, упаковка объявления, упаковка профиля</p></div>
+  <p class="sub">Условия — в закрепе канала</p>
+  <a class="btn more" href="https://innamardar10-alt.github.io/avito-guide/" target="_blank" rel="noopener">Подробный гид</a>
+  <a class="btn max" href="https://max.ru/channel_id860322136454_biz" target="_blank" rel="noopener">Макс</a>
+  <a class="btn tg" href="https://t.me/InnaAvito" target="_blank" rel="noopener">Телеграм</a>
+</section>
+
+<p class="note">Инна Мардарь, авитолог</p>
+</main>
+
+<div class="up" role="navigation" aria-label="Связь">
+  <a class="a1" href="https://t.me/InnaAvito" target="_blank" rel="noopener">Телеграм</a>
+  <a class="a2" href="https://max.ru/channel_id860322136454_biz" target="_blank" rel="noopener">Макс</a>
+</div>
+</body>
+</html>
